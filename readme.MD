@@ -15,4 +15,16 @@ Environment variables:
 
 The application requires the following environment variables to run:
 
-API_KEY = free API key provided by Reed API
+
+| Key      | Value |
+| ----------- | ----------- |
+| API_KEY      | free API key provided by Reed API       |
+
+Parameters:
+
+Parameters can be found at the top of main.py. You just need to set them to true or false depending on your needs.
+
+| Parameter      | Description | Default     |
+| :---        |    :----:   |          :----: |
+| open_browser      | Opens each job found in the call to the API in the browser. See 'throttle' before using this parameter       | False   |
+| throttle   | Sleeps for a few seconds before opening another browser, this is required if scraping more than ~20 jobs with open_browser enabled, otherwise you will be rate limited and temporarily IP banned from Reed.        | False      |

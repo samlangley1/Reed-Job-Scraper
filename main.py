@@ -22,8 +22,8 @@ params = {
 }
 
 
-throttle = True
-open_browser = True
+throttle = False
+open_browser = False
 
 # Reed search request
 response = client.search(**params)
