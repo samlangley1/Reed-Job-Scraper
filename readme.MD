@@ -18,7 +18,7 @@ The application requires the following environment variables to run:
 
 | Key      | Value |
 | ----------- | ----------- |
-| API_KEY      | free API key provided by Reed API       |
+| API_KEY      | [free API key provided by Reed API](https://www.reed.co.uk/developers/jobseeker)       |
 
 Parameters:
 
