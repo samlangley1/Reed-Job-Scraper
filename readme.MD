@@ -2,8 +2,8 @@ Just a simple wrapper for the Reed API that requests job data and prints to term
 
 
 Dependencies:
-python 3.9 or later
-make
+- python 3.9 or later
+- make
 
 To Run:
 
