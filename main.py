@@ -8,6 +8,8 @@ open_browser = False
 # Only works if open_browser = True
 throttle = False
 
+STRING_MATCH = ""
+
 # Load environment variables from .env file if exists
 load_dotenv()
 
@@ -16,7 +18,7 @@ client = ReedClient(os.getenv("API_KEY"))
 
 # Reed search parameters
 params = {
-    'keywords': "junior web designer, junior web developer, junior wordpress",
+    'keywords': "junior web developer",
     'maximumSalary': 36000,
     'permanent': True,
     'contract': False,
@@ -30,8 +32,7 @@ params = {
 response = client.search(**params)
 data = [{}]
 
-# Used to return more specific results. For example STRING_MATCH = "front" will exclude any results that do not contain the word "front" in the title.
-STRING_MATCH = "junior"
+
 for i, r in enumerate(response):
     if STRING_MATCH in r["jobTitle"].lower():
         data.append(response[i])
