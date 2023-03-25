@@ -3,6 +3,10 @@ from dotenv import load_dotenv
 from reed import ReedClient
 import webbrowser
 
+# Parameters
+throttle = False
+open_browser = False
+
 # Load environment variables from .env file if exists
 load_dotenv()
 
@@ -20,10 +24,6 @@ params = {
     'fullTime': True,
     'minimumSalary': 24000,
 }
-
-
-throttle = False
-open_browser = False
 
 # Reed search request
 response = client.search(**params)
