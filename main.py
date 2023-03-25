@@ -4,8 +4,9 @@ from reed import ReedClient
 import webbrowser
 
 # Parameters
-throttle = False
 open_browser = False
+# Only works if open_browser = True
+throttle = False
 
 # Load environment variables from .env file if exists
 load_dotenv()
