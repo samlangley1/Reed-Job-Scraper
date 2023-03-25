@@ -1,26 +1,28 @@
-Just a simple wrapper for the Reed API that requests job data and prints to terminal.
+A simple wrapper for the Reed API that searches for job data from the Reed API and returns a list of appropriate jobs.
 
 
-Dependencies:
+# Dependencies:
 - python 3.9 or later
 - make
 
-To Run:
+# Usage
 
 1. make
 2. make run
 
 
-Environment variables:
+# Environment variables:
 
 The application requires the following environment variables to run:
-
 
 | Key      | Value |
 | ----------- | ----------- |
 | API_KEY      | [free API key provided by Reed API](https://www.reed.co.uk/developers/jobseeker)       |
 
-Parameters:
+
+These can most easily be created in a .env file
+
+# Parameters:
 
 Parameters can be found at the top of main.py. You just need to set them to true or false depending on your needs.
 
